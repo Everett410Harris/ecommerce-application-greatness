@@ -1,6 +1,9 @@
 ﻿using eTickets.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Data.Entity;
+using System.Linq;
+using System.Collections.Concurrent;
+using System.Threading.Tasks;
 using DbContext = Microsoft.EntityFrameworkCore.DbContext;
 
 namespace eTickets.Data
@@ -26,7 +29,7 @@ namespace eTickets.Data
             base.OnModelCreating(modelBuilder);
         }
 
-        public System.Data.Entity.DbSet<Actor> Actors { get; set; }
+        public DbSet<Actor> Actors { get; set; }
         public DbSet<Movie> Movies { get; set; }
         public DbSet<Actor_Movie> Actors_Movies { get; set; }
         public DbSet<Cinema> Cinemas { get; set; }

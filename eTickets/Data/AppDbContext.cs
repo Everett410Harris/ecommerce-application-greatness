@@ -1,6 +1,5 @@
 ﻿using eTickets.Models;
 using Microsoft.EntityFrameworkCore;
-using System.Data.Entity;
 using System.Linq;
 using System.Collections.Concurrent;
 using System.Threading.Tasks;
